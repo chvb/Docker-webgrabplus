@@ -15,10 +15,10 @@ if [ ! -d /config/rex ]; then
   cp -R /webgrab/rex /config/ && rm -f /config/rex/*.example.xml
 fi
 
-#Check if any INI file exists. Copy default (vodafone.de.ini) if non-existent
+#Check if any INI file exists. Copy default siteini.pack if non-existent
 count=`ls -1 /config/*.ini 2>/dev/null | wc -l`
 if [ $count = 0 ]; then
-  cp -R /webgrab/siteini.pack/Germany/vodafone.de.ini /config/ && rm -f /config/rex/*.example.xml
+  cp -R /webgrab/siteini.pack/ /config/ && rm -f /config/rex/*.example.xml
 fi
 
 #Check if user modified cron file exists and move to wg++.
