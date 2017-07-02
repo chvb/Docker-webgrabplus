@@ -1,5 +1,5 @@
 FROM phusion/baseimage:latest
-MAINTAINER Jchvb
+MAINTAINER chvb
 ENV DEBIAN_FRONTEND noninteractive
 
 #Disable the SSH server
