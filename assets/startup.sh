@@ -16,7 +16,7 @@ if [ ! -d /config/rex ]; then
 fi
 
 #Check if any INI file exists. Copy default siteini.pack if non-existent
-count=`ls -1 /config/*.ini 2>/dev/null | wc -l`
+count=`ls -1 /config/siteini.pack/*.txt 2>/dev/null | wc -l`
 if [ $count = 0 ]; then
   cp -R /webgrab/siteini.pack/ /config/ && rm -f /config/rex/*.example.xml
 fi
