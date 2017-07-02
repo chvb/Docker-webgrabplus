@@ -1,5 +1,5 @@
-FROM phusion/baseimage:0.9.19
-MAINTAINER Jan Werner <mail@janwerner.de>
+FROM phusion/baseimage:latest
+MAINTAINER Jchvb
 ENV DEBIAN_FRONTEND noninteractive
 
 #Disable the SSH server
